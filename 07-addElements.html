@@ -14,12 +14,22 @@
 
 <!-- À appeler dans une feuille js à part -->
 <script type="text/javascript">
+
     let pizzas = ["5 fromages", "Montagnarde", "Tartiflette", "Marguerita supplément fromage", "Reine mozza"];
+    let yield = document.querySelector('#yield ul');
+    
+    for(i=0; i < pizzas.length; i++ ){
+
+        let pizzasList = document.createElement("li");
+        pizzasList.innerText = pizzas[i];
+        yield.appendChild(pizzasList); 
+    }
 
     /*
      * Faire une boucle sur les pizzas
      * Ajouter chaque pizza en tant qu'élément de list dans "ul"
-     */
+    */
+
 </script>
 </body>
 </html>

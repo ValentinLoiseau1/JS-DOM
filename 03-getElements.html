@@ -21,10 +21,19 @@
 
 <!-- À appeler dans un js à part -->
 <script type="text/javascript">
-    // let elementById = document. (...)
-    // let elementsByClass = document. (...)
-    // let elementsByTag = document. (...)
 
+/* 
+    let elementById  = document.getElementById ("super-id");
+    let elementsByClass = document.getElementsByClassName ("class-cool");
+    let elementsByTag = document.getElementsByTagName ("a"); 
+*/
+    /*  
+        querySelectorAll récupére l'ensembles des variable inquiquer entre paranthése.
+        querySelector recupére la premiére variable indiquer entre paranthése.
+    */ 
+    let elementBySelector = document.querySelectorAll(".super-id, .class-cool, a");
+
+/* 
     console.log("-----------------------------------");
     console.log("Afficher grâce à l'id :");
     console.log(elementById);
@@ -33,7 +42,14 @@
     console.log(elementsByClass);
     console.log("-----------------------------------");
     console.log("Afficher grâce à au tag :");
-    console.log(elementsByTag);
+    console.log(elementsByTag); 
+    console.log("-----------------------------------"); */
+
+    console.log("-----------------------------------");
+    console.log("Afficher grâce au query selector :");
+    console.log(elementBySelector[0]);
+    console.log(elementBySelector[1]);
+    console.log(elementBySelector[2]);
     console.log("-----------------------------------");
 </script>
 </body>

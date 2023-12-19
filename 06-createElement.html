@@ -12,17 +12,22 @@
 
 <!-- À appeler dans une feuille js à part -->
 <script type="text/javascript">
-    let coffee = document.querySelector('#coffee');
 
-    /*
-     * Créer et "injecter" dans coffee un élément (au sens du DOM) de type "span" avec le café de votre choix.
-     * Afin de corser l'affaire, ce café (plus exactement le "span" qui l'encadre) aura :
-     *
-     * - une classe 'selected',
-     * - un contenu avec votre café préféré,
-     * - une couleur marron (en modifiant directement le style de l'élément "span")
-     *
-     */
+    let coffee = document.querySelector('#coffee');
+    let favoriteCoffee = document.createElement("span");
+
+    favoriteCoffee.className = "selected"; /* ou classList.add("selected") */
+    favoriteCoffee.textContent = "Expresso"; /* ou innerText */
+    favoriteCoffee.style.color = "brown";
+
+    coffee.appendChild(favoriteCoffee);
+
+/*  * Créer et "injecter" dans coffee un élément (au sens du DOM) de type "span" avec le café de votre choix. 
+    * Afin de corser l'affaire, ce café (plus exactement le "span" qui l'encadre) aura :
+    * - une classe 'selected',
+    * - un contenu avec votre café préféré,
+    * - une couleur marron (en modifiant directement le style de l'élément "span")  */
+
 </script>
 </body>
 </html>
